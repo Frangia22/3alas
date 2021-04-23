@@ -1,0 +1,38 @@
+/* 
+    Variables / Custom properties
+*/
+:root {
+    --orange: #fe7214;
+    --black: #000000;
+    --white: #FFFFFF;
+    --lightwhite: #F0F0F0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* Cuando se usa una imagen de fonde se deberia color tambien un color de fondo similar al de la imagen*/
+    background-color: var(--black);
+    background-image: url(images/pattern.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header, .container{
+    max-width: 1000px;
+    margin: auto;
+}
+.container{
+    background-color: var(--white);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.title{
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+}
