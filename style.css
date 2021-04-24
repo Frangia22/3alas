@@ -7,6 +7,8 @@
     --black: #000000;
     --white: #FFFFFF;
     --lightwhite: #F0F0F0;
+    --gray: #a6a6a6;
+    --espacio: 20px; 
 }
 *{
     margin: 0;
@@ -45,6 +47,8 @@ body{
     padding-left: 45px;
     display: flex;   
     border-radius: 10px;
+    /* Separa la botonera del slider*/
+    margin-bottom: 20px;
 }
 .navbar, .navbar-form{
     flex-grow: 1;
@@ -79,4 +83,58 @@ body{
     border: 1px solid var(--lightwhite);
     border-radius: 5px;
     padding: 0 15px;
+}
+/*----------------------- Slider -----------------------*/
+.slider{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*----------------------- Principal -----------------------*/
+.principal{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    padding: 0 var(--espacio);
+    margin-bottom: 100px;
+}
+/*----------------------- Categorias -----------------------*/
+.principal-categoria{
+    
+}
+.categoria-title{
+
+}
+.list-categoria{
+    list-style: none;
+    margin-right: var(--espacio);
+}
+.item-categoria{
+    margin: var(--espacio) 0;
+    
+}
+.item-categoria-link{
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 2px dashed var(--gray);
+    display: block;
+    color: var(--black);
+    
+}
+/*----------------------- Productos -----------------------*/
+.principal-producto{
+    background-color: slateblue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--espacio);
+}
+.card{
+    background-color: yellowgreen;
+}
+.card-title{
+    background-color: violet;
+}
+.card-body{
+    background-color: yellow;
+}
+.card-text{
+
 }
