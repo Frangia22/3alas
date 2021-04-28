@@ -83,25 +83,21 @@ body{
     border: 1px solid var(--lightwhite);
     border-radius: 5px;
     padding: 0 15px;
+    cursor: pointer;
 }
 /*----------------------- Slider -----------------------*/
 .slider{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: var(--espacio);
 }
 /*----------------------- Principal -----------------------*/
 .principal{
     display: grid;
     grid-template-columns: 250px 1fr;
     padding: 0 var(--espacio);
+    margin-bottom: var(--espacio);
 }
 /*----------------------- Categorias -----------------------*/
-.principal-categoria{
-    
-}
-.categoria-title{
-
-}
 .list-categoria{
     list-style: none;
     margin-right: var(--espacio);
@@ -132,6 +128,7 @@ body{
     margin-left: 30px;
 }
 .card-body{
+    /*Cambiar por flex asi es mas facil que sea responsive*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 20px;
@@ -147,4 +144,57 @@ body{
     margin-right: 10px;
     text-align: justify;
     font-size: 12px;
+}
+/*----------------------- Newsletter -----------------------*/
+.newsletter{
+    margin: auto;
+    margin-bottom: var(--espacio);
+    max-width: 940px;
+    background-color: chartreuse;
+    border-radius: 6px;
+    border: 1px solid var(--gray);
+    padding: 10px 40px;
+    /* Colores van separados por coma y puedo modifiar la cantidad de cada color(70%)*/
+    background-image: linear-gradient(var(--white) 70%, var(--gray));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aviso{
+    /* Pega el .aviso al .sobre*/
+    flex-grow: 1;
+    padding-left: var(--espacio);
+}
+.aviso-text1{
+    font-weight: bold;
+}
+.aviso-text2{
+    padding-left: 50px;
+}
+.form-news-input{
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+}
+.btn-news{
+    font-weight: bold;
+}
+/*-------------------------------------Footer------------------------*/
+.footer{
+    /* Cambiar a grid*/
+    background-color: var(--lightwhite);
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid var(--gray);
+    padding: 10px 0;
+}
+.footer-two{
+    border-right: 1px solid var(--black);
+    padding-right: 10px;
+}
+.footer-credit{
+    display: flex;
+    align-items: flex-end;
+}
+.footer-text{
+    font-size: 14px;
 }
